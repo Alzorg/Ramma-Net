@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+
+	<head>
+		<title>Rammal Net</title>
+		<link rel="icon" type="image/x-icon" href="images/RammalNetLogo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header"> 
+						<div style="justify-content: center;" class="cart">
+							<span id="count">0</span>
+							<img src="images/shop.png" alt="Clear Cart">
+							<button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+						</div>
+						
+						
+						<h1><a href="index.html"> <img style=" height: 140%;" src="images/RammalNetLogo.png" /> </a></h1>
+						<nav id="nav">
+							
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a> 
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="howAreWe.html">Who we are</a></li>
+											<li><a href="shop.html">Shop</a></li>
+											<li><button  onclick="document.getElementById('id01').style.display='block'" class="SingUpButton" style="width:auto;"> 
+												<i class="fa fa-user-plus"></i>Sign Up</button>
+												<div id="id01" class="modal">
+													 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+														 <form class="modal-content" action="/action_page.php">
+														 <div class="container">
+															 <h1>Sign Up</h1>
+															 <p>Please fill in this form to create an account.</p>
+														<hr>
+														<label for="Name"><b>Full Name</b></label>
+                                                   		 <input type="text" placeholder="Enter your name" name="Name" required>
+														<label for="email"><b>Email</b></label>
+														<input type="text" placeholder="Enter Email" name="email" required>
+														
+														<label for="psw"><b>Password</b></label>
+														<input type="password" placeholder="Enter Password" name="psw" required>
+														
+														<label for="psw-repeat"><b>Repeat Password</b></label>
+														<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+										
+														
+														<div class="clearfix">
+															<button type="button" onclick="document.getElementById('id01')" class="cancelbtn">Cancel</button>
+															<button type="submit" class="SingUpButton">Sign Up</button>
+														</div>
+													</div>
+											</form>
+											</div>
+										</li>
+											<li>
+												<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="SingUpButton"><i class="fa fa-user-check" ></i>Login</button>
+
+                                                        <div id="id02" class="modal">
+                                                        
+                                                        <form class="modal-content animate" action="/action_page.php" method="post">
+                                                            <div class="imgcontainer">
+                                                           
+                                                            </div>
+
+                                                            <div class="container">
+                                                            <label for="uname"><b>Username</b></label>
+                                                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                                            <label for="psw"><b>Password</b></label>
+                                                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                                                
+                                                            <button type="submit" class="SingUpButton">Login</button>
+                                                           
+                                                            </div>
+
+                                                            <div class="container" style="background-color:#f1f1f1">
+                                                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn ">Cancel</button>
+                                                            <span class="psw" style=" color: rgb(117, 86, 86);">Forgot <a href="#">password?</a></span>
+                                                            </div>
+                                                        </form>
+                                                        </div>
+											</li></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+
+					
+				<!-- Main -->
+					  <article id="main">
+						
+						<header>
+							<h2>Shop</h2>
+							<p style="font-style:italic;">We have all types of networking devices</p>
+						</header>
+						<section class="wrapper style5">
+							
+							<div class="inner">
+								<hr/>
+								<!-- shop -->
+								    <!-- our Router  -->
+									<main>
+      <div id="router" class="router_main"  style="background-color: #ffffff;">
+	  
+		<div class="container" style="background-color: #ffffff; ">
+		   <div class="row">
+			  <div class="col-md-12">
+				 <div class="titlepage">
+					<h2 style="text-align: center;">Our Roter</h2>
+				 </div>
+			  </div>
+		   </div>
+		   <div class="row"  >
+			  <div class="products">
+				 <div class="router product" data-id="1" >
+					<figure><img src="img/0E6-00ZW-00052-04.jpg" alt="#" style=" max-width: 30% ; height: auto;"/></figure>
+					<h3>$299</h3>
+					<span> NETGEAR RAX50-100NAS Nighthawk AX5400 WiFi 6 Router  </span>
+					<br>
+				 
+					<button class=" btn"  onclick="addToCart(1, 'WiFi 6 Router', 299)">Buy Now</button>
+				 </div>
+
+				
+			  </div>
+			  <div class="products">
+				 <div class="router product" data-id="2">
+					<figure> <img src="img/33-704-612-S01.jpg" alt="#" style=" max-width: 30% ; height: auto;"/></figure>
+					<h3>$249</h3>
+					<span>  TP-Link Archer GX90 AX6600 Tri-Band Wi-Fi 6 Gaming Router  </span>
+					<br>
+					<button class=" btn" id="2roter" onclick="addToCart(2, 'Wi-Fi 6 Gaming Router', 249)">Buy Now</button>
+				 </div>
+			  </div>
+			  <div class="products">
+				 <div class="router product" data-id="3">
+					<figure><img src="img/33-704-601-S05.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+					<h3>$34</h3>
+					<span> TP-Link AC1200 WiFi Router (Archer A54)  </span>
+					<br>
+					<button class="btn" id="3roter" onclick="addToCart(3, 'Archer A54', 34)">Buy Now</button>
+				 </div>
+			  </div>
+			  <div class="products">
+				 <div class="router product" data-id="4">
+					<figure><img src="img/netgear-2202273_1280.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+					<h3>$112</h3>
+					<span> NETGEAR RAX50-100NAS Nighthawk AX5400 WiFi 6 Router </span>
+					<br>
+					<button class="btn " id="4roter" onclick="addToCart(4, 'WiFi 6 Router', 112)">Buy Now</button>
+				 </div>
+			  </div>
+			  <div class="products">
+				<div class="router product" data-id="5">
+				   <figure><img src="img/33-704-658-S01.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+				   <h3>$179</h3>
+				   <span> Netgear Nighthawk AX2400 Dual Band Router, Black (RAX30-100NAS) </span>
+				   <br>
+					<button class="btn " id="5roter" onclick="addToCart(5, 'RAX30-100NAS', 179)">Buy Now</button>
+				</div>
+			 </div>
+		   </div>
+		</div>
+	 </div>
+			
+
+	</main>
+	 <hr />
+		<!-- shop -->
+						    <!-- our switsh  -->
+					<div id="router" class="router_main"  style="background-color: #ffffff;">
+	  
+								<div class="container" style="background-color: #ffffff; ">
+								   <div class="row">
+									  <div class="col-md-12">
+										 <div class="titlepage">
+											<h2 style="text-align: center;">Our Shwitsh</h2>
+										 </div>
+									  </div>
+								   </div>
+								   <div class="row"  >
+									  <div class="products">
+										 <div class="router product" data-id="6">
+											<figure><img src="img/33-704-179-S01.jpg" alt="#" style=" max-width: 30% ; height: auto;"/></figure>
+											<h3>$15</h3>
+											<span> TP-Link 5 Port Gigabit Ethernet Network Switch - Ethernet Splitter  </span>
+											<br>											 
+											<button class=" btn" id="1switsh" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+										 </div>
+									  </div>
+									  <div class="products">
+										 <div class="router product" data-id="7">
+											<figure><img src="img/33-222-153-04.jpg" alt="#" style=" max-width: 30% ; height: auto;"/></figure>
+											<h3>$89</h3>
+											<span>  NETGEAR 24-Port Gigabit Ethernet Unmanaged Switch (GS324) </span>
+											<br>
+											<button class=" btn" id="2switsh" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+										 </div>
+									  </div>
+									  <div class="products">
+										 <div class="router product" data-id="8">
+											<figure><img src="img/2WG-002S-00065-V01.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+												<h3>$125</h3>
+											<span>NETGEAR ProSAFE 16-Port Gigabit Ethernet Switch (GS116NA)</span>
+											<br>
+											<button class="btn" id="3switsh" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+										 </div>
+										  </div>
+										  <div class="products">
+											 <div class="router product" data-id="9">
+												<figure><img src="img/33-122-950-V01.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+												<h3>$467</h3>
+												<span> NETGEAR 24-Port PoE Gigabit Ethernet Smart Switch with PoE+ (190W) (GS724TP)</span>
+												<br>
+												<button class="btn " id="4switsh" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+											 </div>
+										  </div>
+										  <div class="products">
+											<div class="router product" data-id="10">
+											   <figure><img src="img/33-122-834-03.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+											   <h3>$2542</h3>
+											   <span>NETGEAR ProSAFE Intelligent Edge M4300-52G-PoE + 550W Stackable 1G L3 Managed 52-Port Switch  </span>
+											   <br>
+												<button class="btn" id="5switsh" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+											</div>
+										 </div>
+									   </div>
+									</div>
+									 </div>
+									 <hr />
+									  <!-- our  NETWORK-->
+										<div id="router" class="router_main"  style="background-color: #ffffff;">
+								  
+										<div class="container" style="background-color: #ffffff; ">
+									   <div class="row">
+										  <div class="col-md-12">
+											 <div class="titlepage">
+												<h2 style="text-align: center;">Our Network </h2>
+											 </div>
+										  </div>
+									   </div>
+									   <div class="row"  >
+										  <div class="products">
+											 <div class="router product">
+													<figure><img src="img/NIC13.jpg" alt="#" style=" max-width: 30% ; height: auto;"/></figure>
+													<h3>$35</h3>
+													<span> Wavlink WiFi 6E AX5400 PCIe WiFi Card AX210  </span>
+													<br>
+												 
+													<button class=" btn" id="1network" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+												 </div>
+											  </div>
+											  <div class="products">
+												 <div class="router product">
+													<figure><img src="img/33-320-448-V01.jpg" alt="#" style=" max-width: 30% ; height: auto;"/></figure>
+													<h3>$34</h3>
+													<span>  ASUS PCE-AX3000 WiFi 6 </span>
+													<br>
+													<button class=" btn" id="2network" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+												 </div>
+											  </div>
+											  <div class="products">
+												 <div class="router product">
+													<figure><img src="img/itheNet.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+													<h3>$85</h3>
+													<span>  Intel Ethernet Server Adapter I350-T2 </span>
+													<br>
+													<button class="btn" id="3network" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+												 </div>
+											  </div>
+											  <div class="products">
+												 <div class="router product">
+													<figure><img src="img/usbNIS.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+													<h3>$41</h3>
+													<span> StarTech USB 3.0 to Gigabit Ethernet NIC Network Adapter </span>
+													<br>
+													<button class="btn " id="4network" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+												 </div>
+											  </div>
+											  <div class="products">
+												<div class="router product">
+												   <figure><img src="img/wifiUSB.jpg" alt="#" style=" max-width: 30% ; height: auto;" /></figure>
+												   <h3>$10</h3>
+												   <span> 600Mbps USB Wifi Adapter for PC Mini 802.11ac Dual Band  </span>
+												   <br>
+													<button class="btn " id="5network" onclick="addToCart(1, 'قطعة 1', 10)">Buy Now</button>
+												</div>
+											 </div>	
+										   </div>
+										</div>
+									 </div>					
+								
+									 <hr />
+								<section>
+									<h4>Image</h4>
+									
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/84273.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/wifi-router-table-smart-connection.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/online-cloud-data-storage-concept-cloudscape-digital-online-server-global-network-business-web-database-backup-computer-private-infrastructure-technology.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/how.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/123456.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/laptop00.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/laptop99.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/internet00.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/laptop55.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<hr />
+									
+									<p><span class="image left"><img src="images/wifi-router-table-smart-connection.jpg" alt="" /></span>At the end of your journey in exploring our digital world, we would like to express our deep gratitude for choosing RAMMAL NET as your preferred destination for cutting networks. We realize that the world of IT is rapidly accelerating, which is why we built our store to be a reliable and cutting-edge companion to your needs. At RAMMAL NET, we are pleased to offer a unique collection of high-quality network parts that meet the expectations of professionals and amateurs alike. We take pride in providing an electronic shopping platform that combines ease and diversity, with a strong focus on providing a unique shopping experience.
+									</p>
+									<p><span class="image right"><img src="images/laptop99.jpg" alt="" /></span>Enjoy the convenience of shopping online without worry, as we are committed to providing safe and efficient services, in addition to fast delivery and dedicated customer service that resolves any questions that may arise in your mind.
+
+										Thank you for trusting us and choosing RAMMAL NET for your needs in the world of networking and information technology. We look forward to serving you again in the future, promising more exciting experiences and innovative products.
+										
+										Thank you for choosing RAMMAL NET - where technology meets exceptional quality and service!</p>
+								</section>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.tiktok.com/@rammalo_a?_t=8dn8g5Xoena&_r=1" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
+						<li><a href="https://www.facebook.com/rammal.abbass/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/ramalo_abbass/?hl=ar" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:rammalabbass.ar@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/abbass-rammal-b480b01b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Rammal Net</li><li>Design: <a href="https://abbas.artiuo.com/">Abbass</a></li>
+					</ul>
+					<img  style="width: 20%; " src="images/RammalNetLogo.png"/>
+				</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
